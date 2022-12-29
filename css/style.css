@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    height: 1000px
+}
+
+.leftSection {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(.././img/rahul-chakraborty-5aN2I852PTs-unsplash.jpg);
+    background-size: auto 100%;
+}
