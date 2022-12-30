@@ -3,11 +3,39 @@ body {
     height: 1000px
 }
 
-.leftSection {
-    width: 400px;
+.left-section {
+    width: 33%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(.././img/rahul-chakraborty-5aN2I852PTs-unsplash.jpg);
+    align-items: center;
+    background-image: url(.././img/josh-hild-K4WXehq5Alc-unsplash.jpg);
     background-size: auto 100%;
+    background-position: center;
 }
+
+.image-source,
+.image-source a {
+    color: black;
+    font-size: 18px;
+    background-color: #ffffff62;
+}
+
+.image-source a {
+    text-decoration: none;
+}
+
+.signup-form li {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form {
+    display: flex;
+}
+
+/* .main-content {
+    flex: 1;
+} */
+

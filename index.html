@@ -8,19 +8,48 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="leftSection">
+  <div class="left-section">
     <div class="logo">
       Logo
     </div>
-    <div class="imageSource">Photo by <a href="https://unsplash.com/@hckmstrrahul?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rahul Chakraborty</a> on <a href="https://unsplash.com/photos/5aN2I852PTs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    <div class="image-source">Photo by <a href="https://unsplash.com/@joshhild?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josh Hild</a> on <a href="https://unsplash.com/photos/K4WXehq5Alc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
     </div>
   </div>
-  <div class="mainContent">
+  <div class="main-content">
     <div class="header">
       Fake header.
     </div>
-    <form action="/index" method="post">
-      <input type="text">
+    <form action="/index" method="post" class="signup-form">
+      <ul>
+        <li>
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name">
+        </li>
+        <li>
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name">
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone">
+        </li>
+        <li>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+        </li>
+        <li>
+          <label for="confirm-password">Confirm Password</label>
+          <input type="text" name="confirm-password" id="confirm-password">
+        </li>
+      </ul>
+      
     </form>
 
   </div>
