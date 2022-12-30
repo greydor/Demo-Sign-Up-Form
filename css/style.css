@@ -1,11 +1,25 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
-    height: 1000px
+    height: 100%;
+    min-height: 500px;
+    font-family: "Roboto", sans-serif;
 }
 
 .left-section {
-    width: 33%;
-    min-width: 300px;
+    width: 38%;
+    min-width: 250px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,24 +32,36 @@ body {
 .image-source,
 .image-source a {
     color: black;
-    font-size: 18px;
+    font-size: 12px;
     background-color: #ffffff62;
 }
 
-.image-source a {
-    text-decoration: none;
-}
-
-.signup-form li {
-    display: flex;
-    flex-direction: column;
+.image-source {
+    margin: 10px;
 }
 
 .signup-form {
     display: flex;
+    flex-direction: column;
 }
 
-/* .main-content {
+.form-flex-row {
+    display: flex;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form-flex-row div {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+}
+
+/* .content {
     flex: 1;
 } */
 

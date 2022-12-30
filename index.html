@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/normalize.css" rel="stylesheet">
   <link href="/css/style.css" rel="stylesheet">
   <title>Document</title>
 </head>
@@ -16,41 +17,54 @@
   
     </div>
   </div>
-  <div class="main-content">
+  <div class="content">
     <div class="header">
-      Fake header.
+      <p>This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams.</p>
+      <p>Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to</p>
     </div>
-    <form action="/index" method="post" class="signup-form">
-      <ul>
-        <li>
+    <form class="signup-form" id="signup-form">
+
+      <div class="form-flex-row">
+        <div>
           <label for="first-name">First Name</label>
           <input type="text" name="first-name" id="first-name">
-        </li>
-        <li>
+        </div>
+        <div>
           <label for="last-name">Last Name</label>
           <input type="text" name="last-name" id="last-name">
-        </li>
-        <li>
+        </div>
+      </div>
+
+      <div class="form-flex-row">
+        <div>
           <label for="email">Email</label>
           <input type="email" name="email" id="email">
-        </li>
-      </ul>
-      <ul>
-        <li>
+        </div>
+        <div>
           <label for="phone">Phone Number</label>
-          <input type="text" name="phone" id="phone">
-        </li>
-        <li>
+          <input type="tel" name="phone" id="phone">
+        </div>
+      </div>
+
+      <div class="form-flex-row">
+        <div>
           <label for="password">Password</label>
           <input type="password" name="password" id="password">
-        </li>
-        <li>
+        </div>
+        <div>
           <label for="confirm-password">Confirm Password</label>
-          <input type="text" name="confirm-password" id="confirm-password">
-        </li>
-      </ul>
+          <input type="password" name="confirm-password" id="confirm-password">
+        </div>
+      </div>
+
       
     </form>
+    <div class="content-bottom">
+      <button type="submit" form="signup-form">Create Account</button>
+      <div>Already have an account? <a href="/">Log in</a></div>
+    </div>
 
   </div>
   
