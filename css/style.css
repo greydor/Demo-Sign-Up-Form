@@ -1,7 +1,15 @@
+:root {
+    --content-padding-left: 40px;
+}
+
 html {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.content {
+    background-color: rgb(239, 239, 239);
 }
 
 p {
@@ -16,6 +24,16 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.header {
+    width: 75%;
+    margin: 80px 0 50px var(--content-padding-left);
+    font-weight: bold;
+}
+
+.header p {
+    margin-top: 20px;
+}
+
 .left-section {
     width: 38%;
     min-width: 270px;
@@ -27,6 +45,7 @@ body {
     background-image: url(.././img/josh-hild-K4WXehq5Alc-unsplash.jpg);
     background-size: auto 100%;
     background-position: center;
+    
 }
 
 .source,
@@ -43,6 +62,14 @@ body {
 .signup-form {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    padding: 30px 0 30px var(--content-padding-left);
+    gap: 5px;
+}
+
+form h1 {
+ padding: 0;
+ margin: 0;
 }
 
 .form-flex-row {
@@ -61,13 +88,10 @@ button {
     color: white;
 }
 
-/* .content {
-    flex: 1;
-} */
-
 img {
     width: 80px;
-    overflow: hidden
+    overflow: hidden;
+    flex: none;
 }
 
 .logo {
@@ -81,3 +105,6 @@ img {
     padding: 10px;
 }
 
+.content-bottom {
+    padding: 30px 0 30px var(--content-padding-left);
+}
