@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/normalize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet" />
+    <script src="./js/script.js" defer=""></script>
     <title>Document</title>
   </head>
 
@@ -52,36 +54,41 @@
         <div class="form-flex-row">
           <div>
             <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" />
+            <input type="text" name="first-name" id="first-name" required/>
           </div>
           <div>
             <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" />
+            <input type="text" name="last-name" id="last-name" required/>
           </div>
         </div>
 
         <div class="form-flex-row">
           <div>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required/>
+            <span></span>            
           </div>
+
           <div>
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" />
+            <input type="tel" name="phone" id="phone" required/>
           </div>
         </div>
 
         <div class="form-flex-row">
           <div>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" required/>
+          <span></span>            
           </div>
+
           <div>
             <label for="confirm-password">Confirm Password</label>
             <input
               type="password"
               name="confirm-password"
               id="confirm-password"
+              required
             />
           </div>
         </div>

@@ -10,6 +10,7 @@ html {
 
 .content {
     background-color: rgb(239, 239, 239);
+    flex: 1;
 }
 
 p {
@@ -62,22 +63,50 @@ body {
 }
 
 .signup-form {
+    box-shadow: 0 6px 6px -6px grey;
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 30px 0 30px var(--content-padding-left);
-    gap: 5px;
+    padding: 16px 0 30px var(--content-padding-left);
+    gap: 14px;
+    letter-spacing: 1px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+}
+
+input {
+    border-color: #E5E7EB;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+input:focus {
+    border-color: rgb(0, 0, 170);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    box-shadow: 6px 6px 6px -6px grey;
 }
 
 form h1 {
     padding: 0;
     margin: 0;
+    font-size: 20px;
 }
 
 .form-flex-row {
     display: flex;
     column-gap: 50px;
     flex-wrap: wrap;
+    row-gap: 14px;
+    position: relative;
 }
 
 .form-flex-row div {
@@ -85,9 +114,20 @@ form h1 {
     flex-direction: column;
 }
 
-button {
+.content-bottom button {
     background-color: #596D48;
     color: white;
+    border-style: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.content-bottom a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 600;
 }
 
 img {
@@ -96,14 +136,15 @@ img {
 }
 
 .logo {
-    margin-top: min(150px, 13vh);
+    margin-top: min(150px, 17vh);
     font-size: 60px;
     display: flex;
-    background-color: #ffffff61;
+    background-color: #ffffff4f;
     width: 100%;
     justify-content: center;
     padding: 10px 0;
     align-items: center;
+    font-family: 'Pacifico', cursive;
 }
 
 .content {
@@ -113,5 +154,33 @@ img {
 }
 
 .content-bottom {
-    padding: 30px 0 30px var(--content-padding-left);
+    padding: 20px 0 30px var(--content-padding-left);
+}
+
+.email:not(:focus):invalid +span::after {
+    content: "* Not a valid email";
+    display: inline;
+    position: absolute;
+    font-size: 10px;
+    color: rgb(170, 0, 0);
+}
+
+.email:not(:focus):invalid {
+    border-color: rgb(170, 0, 0);
+}
+
+.wrong-password +span::after {
+    content: "* Passwords do not match";
+    display: inline;
+    position: absolute;
+    font-size: 10px;
+    color: rgb(170, 0, 0);
+}
+
+.wrong-password {
+    border-color: rgb(170, 0, 0);
+}
+
+.wrong-password:focus {
+    border-color: rgb(170, 0, 0);
 }
