@@ -44,7 +44,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url(./img/josh-hild-K4WXehq5Alc-unsplash.jpg);
+    background-image: url(.././img/josh-hild-K4WXehq5Alc-unsplash.jpg);
     background-size: auto 100%;
     background-position: center;
 }
@@ -144,9 +144,6 @@ img {
     justify-content: center;
     padding: 10px 0;
     align-items: center;
-}
-
-.brand-name {
     font-family: 'Pacifico', cursive;
 }
 
